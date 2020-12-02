@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // alert('Hello');
+    var x = prompt('Nhập 1 số bằng tiếng anh: ');
+
+    var vietnam = ["một", "hai", "ba", "bốn", "năm", "sáu", "bảy", "tám", "chín", "mười"];
+    var english = new Array("one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten");
+
+    alert(search());
+    function search() {
+        var t = 1, check;
+
+        for(let i = 0; i < english.length; i++) {
+            if(x == english[i]) {
+                check = vietnam[i];
+                t = 1;
+                break;
+            } else {
+                t= 0;
+
+            }
+        }
+        // alert(t);
+        if(t == 1) alert('tiếng việt: '+check);
+        else alert('Không có trong từ điển');
+
+    }
+</script>
+</body>
+</html>
